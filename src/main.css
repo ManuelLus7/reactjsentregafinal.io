@@ -185,3 +185,15 @@ body {
 .enviar:hover {
     background-color: var(--clr-main-light); /* Color principal más claro al pasar el mouse */
 }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario input,
+.formulario button {
+  width: 100%;
+}
+

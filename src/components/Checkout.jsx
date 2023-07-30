@@ -35,23 +35,25 @@ const Checkout = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container" style={{ marginBottom: '40px' }}>
             <h1 className="main-title">Finalizar compra</h1>
-            <form className="formulario" onSubmit={handleSubmit(comprar)}>
-                {/* Input para el nombre */}
-                <input type="text" placeholder="Ingresa tu nombre" {...register('nombre', { required: true })} />
+            <div className="formulario-wrapper">
+                <form className="formulario" onSubmit={handleSubmit(comprar)}>
+                    {/* Input para el nombre */}
+                    <input type="text" placeholder="Ingresa tu nombre" {...register('nombre', { required: true })} />
 
-                {/* Input para el correo electrónico */}
-                <input type="email" placeholder="Ingresa tu correo electrónico" {...register('email', { required: true })} />
+                    {/* Input para el correo electrónico */}
+                    <input type="email" placeholder="Ingresa tu correo electrónico" {...register('email', { required: true })} />
 
-                {/* Input para el número de teléfono */}
-                <input type="tel" placeholder="Ingresa tu número de teléfono" {...register('telefono', { required: true })} />
+                    {/* Input para el número de teléfono */}
+                    <input type="tel" placeholder="Ingresa tu número de teléfono" {...register('telefono', { required: true })} />
 
-                {/* Botón para enviar el formulario */}
-                <button className="enviar" type="submit">
-                    Comprar
-                </button>
-            </form>
+                    {/* Botón para enviar el formulario */}
+                    <button className="enviar" type="submit">
+                        Comprar
+                    </button>
+                </form>
+            </div>
         </div>
     );
 };
