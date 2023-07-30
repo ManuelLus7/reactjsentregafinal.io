@@ -1,0 +1,187 @@
+/* Reset y configuración global */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Colores */
+:root {
+  --clr-main: #1a1a1a; /* Negro principal */
+  --clr-main-light: #333; /* Negro más claro */
+  --clr-accent: #f03d5f; /* Rosa de acento */
+  --clr-bg-light: #f9f9f9; /* Color de fondo claro */
+  --clr-text-light: #777; /* Color de texto claro */
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main-title {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--clr-main); /* Utilizando el color principal definido en :root */
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Espacio entre el logo y los enlaces */
+  background-color: var(--clr-main);
+  border-bottom: 3px solid var(--clr-accent);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem; /* Espacio entre los enlaces */
+  padding: 0; /* Quitamos el padding por defecto de la lista */
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.producto {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    background-color: #fff;
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.producto > div {
+    padding: 1.5rem;
+}
+
+.producto .ver-mas {
+    text-decoration: none;
+    background-color: var(--clr-accent); /* Utilizando el color de acento */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.producto .ver-mas:hover {
+    background-color: var(--clr-main-light); /* Color de acento más claro al pasar el mouse */
+}
+
+.producto-detalle {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.producto-detalle img {
+    width: 100%;
+}
+
+.producto-detalle-info h3 {
+    font-size: 2rem;
+    color: var(--clr-main); /* Utilizando el color principal */
+}
+
+.categoria {
+    font-size: 0.8rem;
+    color: var(--clr-text-light); /* Utilizando color de texto claro */
+    margin-top: 1rem;
+}
+
+.precio {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    color: var(--clr-main); /* Utilizando el color principal */
+}
+
+.item-count {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.item-count button,
+.agregar-al-carrito,
+.enviar {
+    background-color: var(--clr-main); /* Utilizando el color principal */
+    border: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 2px solid var(--clr-main); /* Borde del mismo color principal */
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.item-count button:hover,
+.agregar-al-carrito:hover,
+.enviar:hover {
+    background-color: var(--clr-main-light); /* Color principal más claro al pasar el mouse */
+    border-color: var(--clr-main-light); /* Borde del mismo color principal más claro al pasar el mouse */
+}
+
+.agregar-al-carrito,
+.enviar {
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--clr-main); /* Utilizando el color principal */
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.agregar-al-carrito:hover,
+.enviar:hover {
+    background-color: var(--clr-main-light); /* Color principal más claro al pasar el mouse */
+}
