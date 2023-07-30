@@ -8,73 +8,57 @@ Curso: Reactjs<br>Alumno: Lus, Manuel<br>Comisión: 43265
 # 💻 Tech Stack:
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat-square&logo=vercel&logoColor=white)
 
-# Getting Started with Create React App
+# Sobre el proyecto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El encargo fue crear un E-Commerce, desarrollando su flujo, funcionalidades e interfaz de usuario.
+No se evaluó el desarrollo del estilo, pero se lo alentó enfáticamente.
 
-## Available Scripts
+Mi opinión sobre este proyecto fue desarrollar un comercio electrónico de hardware, llamado GPDudes.
 
-In the project directory, you can run:
 
-### `npm start`
+## Tecnologías implementadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+En este comercio electrónico, encontrará que la estructura base se creó en torno a React.js con un uso adicional de Javascript. No obstante, existen otras tecnologías involucradas, como CSS3, SASS y Bootstrap para estilos adicionales, Git para el control de versiones y Firebase para el almacenamiento de datos.
+A continuación, aquí hay una lista del uso específico que se le dio a cada herramienta.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### React.js
 
-### `npm test`
+- Estructura principal del proyecto, construido orientado a componentes y con un flujo de trabajo de aplicación de una sola página.
+- Hooks para guardar y actualizar datos (useState y useEffect).
+- Uso de Contexto para un mejor y más específico y optimizado manejo de DOM.
+- Navegabilidad a través de dependencias `react-router-dom`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### JavaScript
 
-### `npm run build`
+- Funciones básicas e intermedias utilizadas para fines específicos, como eventos (p. ej., onClicks) y validaciones (p. ej., representación condicional).
+- Definición de variables para su posterior uso en la citada estructura.
+- Uso de promesas (async) para almacenamiento de datos (lista de carritos y órdenes de compra) y carga de datos (lista de artículos y detalles de artículos).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### CSS3, SASS, Bootstrap
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Bootstrap**: estilos predefinidos para diseños de cuadrícula y flexibles, así como componentes básicos de HTML5 (por ejemplo, botones).
+- **CSS3**: Herramienta principal para estilos personalizados y anulación ocasional de estilos predefinidos de Bootstrap no deseados.
+- **SASS**: Modularización de estilos y estilos basados en lógica, como variables.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### base de fuego
 
-### `npm run eject`
+- Almacenamiento de datos (productos y órdenes de compra).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Control de versiones y envío de confirmación (al repositorio remoto de GitHub).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Dependencias y Gestión de Paquetes
 
-## Learn More
+Para fines de gestión de paquetes, la herramienta seleccionada para su uso fue npm.js.
+En cuanto a las dependencias, este proyecto tiene solo 3:
+- `react`, que se instala automáticamente a través del comando `create-react-app` ejecutado en la consola al crear la plantilla para el proyecto.
+- `react-router-dom`, utilizado con fines de navegabilidad y mencionado anteriormente en la sección **React.js** de **Tecnologías implementadas**.
+- `firebase`, que se usa con fines de almacenamiento y se requiere para la implementación adecuada de **Firestore**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Resumen
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Habiendo especificado de qué se trata el proyecto, cuál era su propósito y enumerando todas las herramientas utilizadas para desarrollarlo, ¡me encantaría que lo revises!
+Puede ser un poco básico, pero tiene todas las características principales que tiene cualquier comercio electrónico: un catálogo de productos, su vista detallada, un carrito de compras y un proceso que genera automáticamente órdenes de compra.
