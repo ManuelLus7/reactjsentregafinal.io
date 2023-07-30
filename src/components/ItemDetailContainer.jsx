@@ -9,38 +9,23 @@ const ItemDetailContainer = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        // Función para obtener el detalle del producto por su ID desde Firestore
-        const fetchItemDetail = async () => {
-            try {
-                const docRef = doc(db, 'productos', id);
-                const docSnap = await getDoc(docRef);
 
-                if (docSnap.exists()) {
-                    // Si el documento existe, configuramos el estado del item
-                    setItem({ ...docSnap.data(), id: docSnap.id });
-                } else {
-                    console.log('El documento no existe.');
-                }
-            } catch (error) {
-                console.error('Error al obtener el detalle del producto:', error);
-            }
-        };
+      const docRef = doc(db, "productos", id);
+      getDoc(docRef)
+        .then((resp) => {
+          setItem(
+            { ...resp.data(), id: resp.id }
+          );
+        })
 
-        // Llamamos a la función para obtener el detalle del producto
-        fetchItemDetail();
-    }, [id]);
+    }, [id])
+    
 
-    return (
-        <div>
-            {item ? (
-                // Renderizamos el componente ItemDetail cuando el item tiene información
-                <ItemDetail item={item} />
-            ) : (
-                // Mostramos un mensaje de carga o error mientras se obtiene la información del producto
-                <p>Cargando...</p>
-            )}
-        </div>
-    );
-};
+  return (
+    <div>
+        {item && <ItemDetail item={item} />}
+    </div>
+  )
+}
 
-export default ItemDetailContainer;
+export default ItemDetailContainer
