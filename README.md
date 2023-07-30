@@ -34,7 +34,7 @@ No obstante, se utilizaron otras tecnologías, como CSS3, Bootstrap para estilos
 
 - Definición de variables para su posterior uso en la citada estructura.
 
-### CSS3, SASS, Bootstrap
+### CSS3, Bootstrap
 
 - **Bootstrap**: estilos predefinidos para diseños de cuadrícula y flexibles, así como componentes básicos de HTML5 (por ejemplo, botones).
 
