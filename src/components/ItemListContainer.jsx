@@ -10,36 +10,28 @@ const ItemListContainer = () => {
     const { categoria } = useParams();
 
     useEffect(() => {
-        // Función para obtener los productos desde Firestore
-        const fetchProductos = async () => {
-            try {
-                const productosRef = collection(db, 'productos');
-                const q = categoria ? query(productosRef, where('categoria', '==', categoria)) : productosRef;
 
-                const querySnapshot = await getDocs(q);
-
-                setProductos(
-                    querySnapshot.docs.map((doc) => {
-                        return { ...doc.data(), id: doc.id };
-                    })
-                );
-            } catch (error) {
-                console.error('Error al obtener los productos:', error);
-            }
-        };
-
-        // Llamamos a la función para obtener los productos
-        fetchProductos();
-
-        // Actualizamos el título según la categoría seleccionada (si existe)
-        setTitulo(categoria ? `Productos de ${categoria}` : 'Productos');
-    }, [categoria]);
-
+        const productosRef = collection(db, "productos");
+        const q = categoria ? query(productosRef, where("categoria", "==", categoria)) : productosRef;
+  
+        getDocs(q)
+          .then((resp) => {
+  
+            setProductos(
+              resp.docs.map((doc) => {
+                return { ...doc.data(), id: doc.id }
+              })
+            )
+          })
+          
+      }, [categoria])
+      
+      
     return (
-        <div>
-            <ItemList productos={productos} titulo={titulo} />
-        </div>
-    );
-};
-
-export default ItemListContainer;
+      <div>
+          <ItemList productos={productos} titulo={titulo} />
+      </div>
+    )
+  }
+  
+  export default ItemListContainer
