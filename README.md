@@ -37,10 +37,8 @@ A continuación, aquí hay una lista del uso específico que se le dio a cada he
 ### CSS3, SASS, Bootstrap
 
 - **Bootstrap**: estilos predefinidos para diseños de cuadrícula y flexibles, así como componentes básicos de HTML5 (por ejemplo, botones).
-- **CSS3**: Herramienta principal para estilos personalizados y anulación ocasional de estilos predefinidos de Bootstrap no deseados.
-- **SASS**: Modularización de estilos y estilos basados en lógica, como variables.
 
-### base de fuego
+### Firebase
 
 - Almacenamiento de datos (productos y órdenes de compra).
 
@@ -60,5 +58,4 @@ En cuanto a las dependencias, este proyecto tiene solo 3:
 
 ## Resumen
 
-Habiendo especificado de qué se trata el proyecto, cuál era su propósito y enumerando todas las herramientas utilizadas para desarrollarlo, ¡me encantaría que lo revises!
-Puede ser un poco básico, pero tiene todas las características principales que tiene cualquier comercio electrónico: un catálogo de productos, su vista detallada, un carrito de compras y un proceso que genera automáticamente órdenes de compra.
+Habiendo especificado de qué se trata el proyecto, cuál era su propósito y enumerando todas las herramientas utilizadas para desarrollarlo, ¡me gustaria que lo revises!
