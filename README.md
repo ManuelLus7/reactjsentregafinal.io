@@ -10,16 +10,18 @@ Curso: Reactjs<br>Alumno: Lus, Manuel<br>Comisión: 43265
 
 # Sobre el proyecto
 
-El encargo fue crear un E-Commerce, desarrollando su flujo, funcionalidades e interfaz de usuario.
-No se evaluó el desarrollo del estilo, pero se lo alentó enfáticamente.
+La Consigna fue crear un E-Commerce, desarrollando su flujo, funcionalidades e interfaz de usuario.
+No se evaluó el desarrollo del estilo.
 
-Mi opinión sobre este proyecto fue desarrollar un comercio electrónico de hardware, llamado GPDudes.
+Este proyecto es un comercio electrónico de Indumentaria y Calzado, llamado Wotton.arg.
 
 
 ## Tecnologías implementadas
 
-En este comercio electrónico, encontrará que la estructura base se creó en torno a React.js con un uso adicional de Javascript. No obstante, existen otras tecnologías involucradas, como CSS3, SASS y Bootstrap para estilos adicionales, Git para el control de versiones y Firebase para el almacenamiento de datos.
-A continuación, aquí hay una lista del uso específico que se le dio a cada herramienta.
+En este comercio electrónico, encontrará que la estructura base se creó en torno a React.js con un uso adicional de Javascript. 
+No obstante, se utilizaron otras tecnologías, como CSS3, Bootstrap para estilos adicionales, Git para el control de versiones y Firebase para el almacenamiento de datos.
+
+- A continuación, aquí hay una lista del uso específico que se le dio a cada herramienta:
 
 ### React.js
 
@@ -30,9 +32,7 @@ A continuación, aquí hay una lista del uso específico que se le dio a cada he
 
 ### JavaScript
 
-- Funciones básicas e intermedias utilizadas para fines específicos, como eventos (p. ej., onClicks) y validaciones (p. ej., representación condicional).
 - Definición de variables para su posterior uso en la citada estructura.
-- Uso de promesas (async) para almacenamiento de datos (lista de carritos y órdenes de compra) y carga de datos (lista de artículos y detalles de artículos).
 
 ### CSS3, SASS, Bootstrap
 
@@ -58,4 +58,4 @@ En cuanto a las dependencias, este proyecto tiene solo 3:
 
 ## Resumen
 
-Habiendo especificado de qué se trata el proyecto, cuál era su propósito y enumerando todas las herramientas utilizadas para desarrollarlo, ¡me gustaria que lo revises!
+Habiendo especificado de qué se trata el proyecto, cuál era su propósito y enumerando todas las herramientas utilizadas para desarrollarlo, ¡me gustaria que lo revisen! y quedo a la espera de Sus Devoluciones.- Muchas Gracias
