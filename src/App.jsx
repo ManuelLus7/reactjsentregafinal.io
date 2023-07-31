@@ -1,3 +1,4 @@
+import React from 'react';
 import Contacto from "./components/Contacto";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer";
@@ -8,6 +9,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import Carrito from "./components/Carrito";
 import Checkout from "./components/Checkout";
+import Footer from "./components/Footer"; // Importamos el componente Footer
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
             <Route path="/carrito" element={<Carrito />}/>
             <Route path="/checkout" element={<Checkout />}/>
           </Routes>
-          
+
+          <Footer /> {/* Agregamos el componente Footer al final del contenido */}
+
         </BrowserRouter>
       </CartProvider>
     </div>
