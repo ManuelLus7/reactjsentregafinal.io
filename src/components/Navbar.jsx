@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import CartWidget from './CartWidget';
+import { BiCart } from 'react-icons/bi';
+import { CartContext } from '../context/CartContext';
+
 
 const Navbar = () => {
+  const { cantidadEnCarrito, carrito } = useContext(CartContext);
+
   return (
     <nav className="navbar">
       {/* Logo centrado */}
@@ -56,7 +60,10 @@ const Navbar = () => {
         </li>
         {/* Widget del carrito */}
         <li>
-          <CartWidget />
+          <Link className="menu-link" to="/carrito">
+            <BiCart size={24} />
+            <span className="carrito-cantidad">{cantidadEnCarrito()}</span>
+          </Link>
         </li>
       </ul>
     </nav>
@@ -64,3 +71,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
